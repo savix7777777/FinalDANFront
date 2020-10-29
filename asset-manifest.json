@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/FinalDANFront/static/css/main.d74a4117.chunk.css",
-    "main.js": "/FinalDANFront/static/js/main.5d829757.chunk.js",
-    "main.js.map": "/FinalDANFront/static/js/main.5d829757.chunk.js.map",
+    "main.js": "/FinalDANFront/static/js/main.5eac8b20.chunk.js",
+    "main.js.map": "/FinalDANFront/static/js/main.5eac8b20.chunk.js.map",
     "runtime-main.js": "/FinalDANFront/static/js/runtime-main.b349f4ed.js",
     "runtime-main.js.map": "/FinalDANFront/static/js/runtime-main.b349f4ed.js.map",
     "static/js/2.d572dd62.chunk.js": "/FinalDANFront/static/js/2.d572dd62.chunk.js",
     "static/js/2.d572dd62.chunk.js.map": "/FinalDANFront/static/js/2.d572dd62.chunk.js.map",
     "index.html": "/FinalDANFront/index.html",
-    "precache-manifest.b687ff158c96883a9d8e107185f9527f.js": "/FinalDANFront/precache-manifest.b687ff158c96883a9d8e107185f9527f.js",
+    "precache-manifest.2e5248d583a98bec2c0caab9380e37db.js": "/FinalDANFront/precache-manifest.2e5248d583a98bec2c0caab9380e37db.js",
     "service-worker.js": "/FinalDANFront/service-worker.js",
     "static/css/main.d74a4117.chunk.css.map": "/FinalDANFront/static/css/main.d74a4117.chunk.css.map",
     "static/js/2.d572dd62.chunk.js.LICENSE.txt": "/FinalDANFront/static/js/2.d572dd62.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.b349f4ed.js",
     "static/js/2.d572dd62.chunk.js",
     "static/css/main.d74a4117.chunk.css",
-    "static/js/main.5d829757.chunk.js"
+    "static/js/main.5eac8b20.chunk.js"
   ]
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6bc756466b659a5f4bdc87353655fc79",
+    "revision": "08028996ed88bf3c71677063d8e353d2",
     "url": "/FinalDANFront/index.html"
   },
   {
-    "revision": "02376a1028a48671f220",
+    "revision": "4419f28cb6bb8dd816d8",
     "url": "/FinalDANFront/static/css/main.d74a4117.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FinalDANFront/static/js/2.d572dd62.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "02376a1028a48671f220",
-    "url": "/FinalDANFront/static/js/main.5d829757.chunk.js"
+    "revision": "4419f28cb6bb8dd816d8",
+    "url": "/FinalDANFront/static/js/main.5eac8b20.chunk.js"
   },
   {
     "revision": "7201171e1c9df0226307",

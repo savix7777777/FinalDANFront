@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/FinalDANFront/precache-manifest.b687ff158c96883a9d8e107185f9527f.js"
+  "/FinalDANFront/precache-manifest.2e5248d583a98bec2c0caab9380e37db.js"
 );
 
 self.addEventListener('message', (event) => {
