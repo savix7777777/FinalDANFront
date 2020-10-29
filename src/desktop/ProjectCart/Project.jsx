@@ -10,14 +10,14 @@ const Project = ({projectID,name,lastUpdate}) => {
     };
 
     const deleteProject = async () => {
-        const response = await fetch(`http://localhost:5000/projectData/${projectID}`,{
+        const response = await fetch(`https://finaldan.herokuapp.com/projectData/${projectID}`,{
             method: 'DELETE',
             headers:{
                 'Content-Type': 'application/json',
             },
         });
         const result = await response.json();
-        const responseDataPr = await fetch(`http://localhost:5000/deletePr/${localStorage.getItem('userId')}`,{
+        const responseDataPr = await fetch(`https://finaldan.herokuapp.com/deletePr/${localStorage.getItem('userId')}`,{
             method: 'DELETE',
             headers:{
                 'Content-Type': 'application/json',

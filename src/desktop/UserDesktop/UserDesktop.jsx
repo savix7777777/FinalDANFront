@@ -8,7 +8,7 @@ const UserDesktop = () => {
     const [userData, setUserData] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/${localStorage.getItem('userId')}`, {
+        fetch(`https://finaldan.herokuapp.com/${localStorage.getItem('userId')}`, {
             method: 'GET',
             headers:{
                 'x-access-token': localStorage.getItem('accessToken'),

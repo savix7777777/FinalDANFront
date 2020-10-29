@@ -47,7 +47,7 @@ const SubRoute = ({admin, path}) => {
 
     useEffect(() => {
         !admin && getProjectKey();
-        renderCounter && mongoDBId && fetch(`http://localhost:5000/projectData/${mongoDBId}`)
+        renderCounter && mongoDBId && fetch(`https://finaldan.herokuapp.com/projectData/${mongoDBId}`)
             .then(response => response.json())
             .then(({result}) => {
                 try{

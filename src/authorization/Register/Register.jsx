@@ -35,7 +35,7 @@ const Register = ({back}) => {
             setPasswordMatch(false);
         } else {
             setPasswordMatch(true);
-            const response = await fetch('http://localhost:5000/auth/signup',{
+            const response = await fetch('https://finaldan.herokuapp.com/auth/signup',{
                 method: 'POST',
                 headers:{
                     'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const Register = ({back}) => {
                 setResponseError('error');
             } else {
                 setResponseError('');
-                const response = await fetch('http://localhost:5000/auth/signin',{
+                const response = await fetch('https://finaldan.herokuapp.com/auth/signin',{
                     method: 'POST',
                     headers:{
                         'Content-Type': 'application/json',

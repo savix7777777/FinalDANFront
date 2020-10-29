@@ -56,7 +56,7 @@ const Header = ({admin,path,data}) => {
 
     const sendProjectData = async () => {
         if(mongoDBId){
-            const response = await fetch(`http://localhost:5000/projectData/${mongoDBId}`,{
+            const response = await fetch(`https://finaldan.herokuapp.com/projectData/${mongoDBId}`,{
                 method:'PUT',
                 headers:{
                     'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ const Header = ({admin,path,data}) => {
             });
             const result = await response.json();
         } else {
-            const response = await fetch('http://localhost:5000/projectData',{
+            const response = await fetch('https://finaldan.herokuapp.com/projectData',{
                 method: 'POST',
                 headers:{
                     'Content-Type': 'application/json',

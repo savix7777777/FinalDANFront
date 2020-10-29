@@ -42,7 +42,7 @@ const ProjectsList = ({data}) => {
             setErrorText(true);
         } else {
             setErrorText(false);
-            const response = await fetch('http://localhost:5000/projectData',{
+            const response = await fetch('https://finaldan.herokuapp.com/projectData',{
                 method: 'POST',
                 headers:{
                     'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ const ProjectsList = ({data}) => {
             });
             const result = await response.json();
             const date = getDate();
-            const responseDataPr = await fetch(`http://localhost:5000/newPr/${localStorage.getItem('userId')}`,{
+            const responseDataPr = await fetch(`https://finaldan.herokuapp.com/newPr/${localStorage.getItem('userId')}`,{
                 method: 'PUT',
                 headers:{
                     'Content-Type': 'application/json',
