@@ -1,0 +1,45 @@
+.desktop{
+
+  &-area{
+    width: 100%;
+    @include flex-center;
+    flex-direction: column;
+  }
+
+  &__header{
+    font-family: "Open Sans - Semibold";
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &__user{
+      margin-left: 5%;
+      font-size: 30px;
+      color: #14B9D5;
+    }
+
+    &__user p{
+      color: white;
+      display: inline-block;
+    }
+
+    &__log-out{
+      border: 3px solid #1D2124;
+      background-color: #db5c5c;
+      width: 6%;
+      height: 2.4em;
+      margin-right: 5%;
+      border-radius: 10px;
+      font-size: 20px;
+      color: white;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    &__log-out:hover{
+      transform: scale(1.2);
+      background-color: #1D2124;
+      border-color: #db5c5c;
+    }
+  }
+}

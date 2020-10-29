@@ -1,0 +1,15 @@
+.two-in-column{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  min-height: 44em;
+  overflow: hidden;
+  &__content-box{
+    display: flex;
+    width: 90%;
+    transition: 0.5s;
+    min-height: 20em;
+  }
+}

@@ -1,0 +1,106 @@
+.control-panel{
+  position: fixed;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: width 0.5s;
+  backdrop-filter: blur(5px);
+  background: rgba(205, 214, 219, 0.3);
+  z-index: 100;
+
+  &__mark{
+    color: #38f838;
+    animation: mark 1.5s infinite;
+    border-radius: 50%;
+    padding: 5%;
+  }
+
+  @keyframes mark {
+    0%{
+      box-shadow: 0 0 0 1px rgba(57, 136, 43, 0.9);
+      font-size: 1px;
+    }
+
+    100%{
+      box-shadow: 0 0 0 50px rgba(8, 253, 8, 0.1);
+      font-size: 40px;
+    }
+  }
+
+  &__return{
+    @include flex-center;
+    padding: 2%;
+    width: 10%;
+    position: absolute;
+    color: #38f838;
+    left: 5%;
+    top: 0.5%;
+    font-size: 40px;
+    border: 2px solid #38f838;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  &__return:hover{
+    background-color: #38f838;
+    color: white;
+  }
+
+  &__button{
+    width: 13%;
+    margin-left: 87%;
+    font-size: 30px;
+    border: none;
+    background-color: #14B9D5;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+
+  &__hideButton{
+    position: fixed;
+    color: white;
+    font-size: 25px;
+    border: none;
+    background-color: #14B9D5;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 110;
+  }
+
+  &__save-changes{
+    font-family: "Open Sans - Semibold";
+    bottom: 0;
+    background-color: white;
+    color: #14B9D5;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid #14B9D5;
+    border-radius: 50%;
+    width: 22%;
+    min-height: 6em;
+
+    &-box{
+      @include flex-center;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 10%;
+    }
+  }
+  &__save-changes-box:hover &__save-changes{
+      background-color: #14B9D5;
+      color: white;
+  }
+
+}
+
+.control-panel:focus{
+  width: 0;
+}
+
+.control-panel-hide{
+  width: 0;
+}

@@ -1,0 +1,22 @@
+.grid{
+  display: flex;
+  width: 100%;
+  min-height: 44em;
+  flex-direction: column;
+  overflow: hidden;
+
+  &-row{
+    width: 100%;
+    min-height: 22em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__content-box{
+      display: flex;
+      width: 40%;
+      min-height: 20em;
+      transition: 0.5s;
+    }
+  }
+}

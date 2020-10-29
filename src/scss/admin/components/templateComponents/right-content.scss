@@ -1,0 +1,31 @@
+.right-content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 44em;
+  overflow: hidden;
+
+  &-leftSIde{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    min-height: 44em;
+  }
+
+  &-small{
+    display: flex;
+    width: 100%;
+    min-height: 20em;
+    transition: 0.5s;
+  }
+
+  &-big{
+    display: flex;
+    min-height: 42em;
+    width: 40%;
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,23 @@
+.project-list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 70%;
+  min-height: 20em;
+  background-color: #f2eded;
+  border: 3px solid #1D2124;
+  margin-top: 5%;
+  border-radius: 20px;
+  box-shadow: 0 0 100px rgba(126, 125, 125, 0.5);
+
+  &__h2{
+    margin-top: 5%;
+    font-size: 55px;
+    color: white;
+    text-shadow: #14B9D5 0 -20px 4px;
+    background-color: #2d2c2a;
+    padding: 2% 1%;
+    border-radius: 20px;
+  }
+}

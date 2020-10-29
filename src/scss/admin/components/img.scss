@@ -1,0 +1,27 @@
+.img{
+  position: relative;
+  @include flex-center;
+  width: max-content;
+
+  &__input{
+    margin-left: 1%;
+  }
+
+}
+
+.img input::-webkit-file-upload-button{
+  border: none;
+  border-radius: 5px;
+  background-color: #14B9D5;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.img input::-webkit-file-upload-button:hover{
+  border: 1px solid #14B9D5;
+  color: #14B9D5;
+  background-color: white;
+}
+
+

@@ -1,0 +1,161 @@
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 26%;
+  background-color: white;
+  height: 15em;
+  border: 3px solid #1D2124;
+  border-radius: 15px;
+  margin: 3%;
+  transition: 0.5s;
+  color: #14B9D5;
+  position: relative;
+
+  &__error-text{
+    position: absolute;
+    color: red;
+    top: 66%;
+    font-size: 20px;
+  }
+
+  &__input{
+    width: 70%;
+    height: 1.5em;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  &__input:focus{
+    transform: scale(1.1);
+  }
+
+  &__create-new{
+    border: 2px solid white;
+    background-color: #70d170;
+    color: white;
+    font-size: 20px;
+    width: 50%;
+    height: 2em;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+
+  &__create-new:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #4fae4f;
+  }
+
+  &__button-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__h3, &__h3-new{
+    text-shadow: #000000 0 0 2px;
+    font-size: 40px;
+    margin-top: 22%;
+  }
+
+  &__slash{
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  &__date-box{
+    height: 2em;
+    width: 100%;
+    background-color: #1D2124;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    overflow: hidden;
+    margin-top: 12%;
+  }
+
+  &__date-box p{
+    position: absolute;
+    right: -48%;
+    transition: 0.5s;
+    color: white;
+    margin-left: 10%;
+  }
+
+  &__h3-new{
+    margin-top: 8%;
+  }
+
+  &__add{
+    font-size: 50px;
+    width: 20%;
+    border: 2px solid #14B9D5;
+    border-radius: 50%;
+    background-color: white;
+    color: #14B9D5;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  &__add:hover{
+    font-size: 60px;
+    width: 23%;
+    background-color: #14B9D5;
+    color: white;
+    transform: scale(1.1);
+  }
+
+  &__edit,&__delete{
+    margin-right: 3%;
+    @include flex-center;
+    border: 1px solid white;
+    background-color: #70d170;
+    color: white;
+    border-radius: 50%;
+    height: 2.1em;
+    width: 10%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  &__delete{
+    background-color: #db5c5c;
+    height: 2.6em;
+    width: 10%;
+  }
+
+  &__delete:hover{
+    background-color: white;
+    border-color: #db5c5c;
+    color: #db5c5c;
+  }
+
+  &__edit:hover{
+    background-color: white;
+    border-color: #70d170;
+    color: #70d170;
+  }
+}
+
+.project:hover{
+  transform: scale(1.1);
+}
+
+.project:hover .project__date-box p{
+  animation: slideRight 0.5s forwards;
+}
+
+@keyframes slideRight {
+  0% {
+    right: -48%;
+  }
+
+  100% {
+        right: 2%;
+  }
+}

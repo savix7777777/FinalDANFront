@@ -1,0 +1,15 @@
+.two-in-row{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 44em;
+  overflow: hidden;
+
+  &__content-box{
+    display: flex;
+    width: 40%;
+    min-height: 44em;
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,100 @@
+.tags-constructor{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  transition: 0.5s;
+  overflow: hidden;
+
+  &-column{
+    flex-direction: column;
+  }
+
+  &__control-buttons{
+    position: absolute;
+    right: 0;
+  }
+
+  &-border{
+    border: 1px dashed #14B9D5;
+    min-height: 4em;
+    position: relative;
+  }
+
+  &__button-box{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    align-items: center;
+    justify-content: space-around;
+
+    &__i{
+      border-radius: 5px;
+      background-color: #14B9D5;
+      cursor: pointer;
+      transition: 0.5s;
+      color: white;
+      border: none;
+    }
+    &__i:hover{
+      transform: scale(1.2);
+    }
+  }
+
+  &__show-tags{
+    z-index: 90;
+    filter: opacity(0.4);
+    background-color: white;
+    color: #14B9D5;
+    position: fixed;
+    @include flex-center;
+    border-radius: 50%;
+    border: 3px solid #14B9D5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 4%;
+    height: 2.2em;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 35px;
+    
+    &-small{
+      position: absolute;
+      width: 45px;
+      height: 1.3em;
+      filter: opacity(0.2);
+    }
+  }
+
+  &__show-tags:hover{
+    background-color: #14B9D5;
+    color: white;
+    filter: opacity(1);
+  }
+
+  &__show-tags:focus{
+    transform: rotate(90deg);
+  }
+
+  &__delete{
+    border: none;
+    background-color: red;
+    position: absolute;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+    transition: 0.5s;
+    right: 0;
+  }
+
+  &__delete:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+  }
+}

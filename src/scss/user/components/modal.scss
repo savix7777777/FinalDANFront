@@ -1,0 +1,59 @@
+.modal{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  height: 10em;
+  z-index: 10000;
+  font-size: 25px;
+  font-family: "Open Sans - Semibold";
+  top: 30%;
+  left: 25%;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+
+  &__confirm{
+    background-color: white;
+    color: #14B9D5;
+    border: 2px solid #14B9D5;
+    border-radius: 5px;
+    width: 20%;
+    height: 3em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  &__confirm:hover{
+    background-color: #14B9D5;
+    color: white;
+    border: 2px solid white;
+  }
+
+  &__cancel{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    width: 20%;
+    height: 3em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  &__cancel:hover{
+    background-color: #dbdbdb;
+  }
+
+  &__button-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    text-transform: uppercase;
+  }
+}

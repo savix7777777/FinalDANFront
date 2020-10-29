@@ -1,0 +1,145 @@
+.authorization{
+  @include flex-center;
+  position: absolute;
+  margin-left: 33%;
+  margin-top: 10%;
+  width: 35%;
+  height: 25em;
+  background-color: #14B9D5;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 0 1000px rgba(205, 200, 200, 0.5);
+  font-family: "Open Sans - Semibold";
+  color: white;
+  font-size: 20px;
+
+  &__error-text{
+    color: red;
+    position: absolute;
+    right: -20%;
+
+    &-match{
+      color: red;
+      right: 2%;
+      top: 44px;
+      position: absolute;
+    }
+  }
+
+  &__input-box{
+    position: relative;
+    @include flex-center;
+    width: 56%;
+    margin-right: 17%;
+    margin-top: 5%;
+
+    & i{
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #d5d5d5e0;
+    }
+  }
+
+  & h1{
+    text-shadow: #1D2124 0 0 4px;
+    font-size: 40px;
+  }
+
+  & form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-shadow: #1D2124 0 0 4px;
+  }
+
+  &__input{
+    font-size: 20px;
+    height: 1.5em;
+    margin-left: 5%;
+    transition: 0.5s;
+  }
+
+  &__input:focus{
+    transform: scale(1.1);
+  }
+
+  &__or-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+  }
+
+  &__line{
+    background-color: #f8f5f5;
+    width: 40%;
+    height: 2px;
+  }
+
+  &__log-in, &__register{
+    font-family: "Open Sans - Semibold";
+    border: none;
+    border-radius: 10px;
+    height: 2.5em;
+    width: 50%;
+    margin: 10% 0;
+    background-color: #70d170;
+    color: white;
+    font-size: 25px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  &__log-in:hover{
+    background-color: #64c164;
+  }
+
+  &__register:hover{
+    background-color: #db5c5c;
+  }
+
+  &__register{
+    background-color: #ff6666;
+  }
+
+  &__return-box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__return{
+    color: #1D2124;
+    font-family: "Open Sans - Semibold";
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  &__response-error-text{
+    color: red;
+    margin-top: 4%;
+  }
+
+  &__return:hover{
+    background-color: #14B9D5;
+    color: white;
+  }
+}
+
+.email{
+  margin-left: 16%;
+}
+
+.register-solo{
+  margin-bottom: 0;
+}

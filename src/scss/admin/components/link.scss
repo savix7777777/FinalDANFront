@@ -1,0 +1,15 @@
+.link{
+  @include flex-center;
+  border-radius: 5px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.link a{
+  text-decoration: none;
+  color: #1f75cb;
+}
+
+.link a:hover{
+  text-decoration: underline;
+}

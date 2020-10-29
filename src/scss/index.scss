@@ -1,0 +1,53 @@
+@import "reset";
+@import "fonts/fonts";
+@import "mixins";
+@import "user/sections/header";
+@import "admin/sections/controlPanel";
+@import "user/sections/news";
+@import "user/sections/main-section";
+@import "admin/components/new-post";
+@import "user/components/post";
+@import "admin/components/switcher";
+@import "admin/components/style";
+@import "user/sections/footer";
+@import "user/sections/home";
+@import "admin/components/choose-template";
+@import "admin/components/templateComponents/one.scss";
+@import "admin/components/templateComponents/two-in-column.scss";
+@import "admin/components/templateComponents/two-in-row.scss";
+@import "admin/components/templateComponents/grid.scss";
+@import "admin/components/templateComponents/right-content.scss";
+@import "admin/components/tags-constructor";
+@import "admin/components/tags-modal";
+@import "admin/components/p-menu";
+@import "admin/components/link";
+@import "admin/components/img";
+@import "user/components/product";
+@import "user/components/modal";
+@import "authorization/authorization";
+@import "desktop/desktop";
+@import "desktop/project-list";
+@import "desktop/project";
+
+
+li{
+  list-style: none;
+}
+
+button{
+  z-index: 70;
+}
+
+section{
+  width: 100%;
+  min-height: 46.5em;
+  transition: 0.5s;
+}
+
+button:focus{
+  outline: none;
+}
+
+.templates-border{
+  border: 3px dashed red;
+}

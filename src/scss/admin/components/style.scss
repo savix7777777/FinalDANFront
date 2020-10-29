@@ -1,0 +1,76 @@
+.style{
+  font-family: "Open Sans - Semibold";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 5%;
+  min-height: 95%;
+  margin-top: 25%;
+  position: absolute;
+
+  &__img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 5em;
+
+    &-link{
+      border: 1px solid #14B9D5;
+    }
+  }
+
+  &__img input::-webkit-file-upload-button{
+    border: none;
+    border-radius: 5px;
+    background-color: #14B9D5;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  &__img input::-webkit-file-upload-button:hover{
+    border: 1px solid #14B9D5;
+    color: #14B9D5;
+    background-color: white;
+  }
+
+  &__tagName{
+    text-transform: uppercase;
+    font-size: 30px;
+    background-color: #14B9D5;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+  }
+}
+
+.style div{
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.style div input{
+  margin-left: 3%;
+}
+
+.style #height,#fontSize,#width,#marginTop,#marginBottom,#marginRight,#marginLeft,#br,.product__counter{
+  width: 20%;
+  border: none;
+  height: 2em;
+  font-size: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #14B9D5;
+  color: white;
+}
+
+.style #bc #color{
+  width: 15%;
+  height: 1.5em;
+  border-radius: 5px;
+  border: none;
+}

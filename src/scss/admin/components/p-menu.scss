@@ -1,0 +1,45 @@
+.p{
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans - Semibold";
+  border-radius: 5px;
+  word-break: break-all;
+  transition: 0.5s;
+  position: relative;
+
+  &-delete{
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 3px;
+    transition: 0.5s;
+  }
+
+  &-delete:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+  }
+
+  &-edit{
+    border: none;
+    background-color: #14B9D5;
+    color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 3px;
+    transition: 0.5s;
+  }
+
+  &-edit:hover{
+    background-color: white;
+    color: #14B9D5;
+    border: 1px solid #14B9D5;
+  }
+}
